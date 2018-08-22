@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="18dp"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="修改传感器配置"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_max_value"
+                android:text="最大阈值"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_max_value"
+                android:layout_width="wrap_content"
+                android:minWidth="80dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv_max_value"
+                android:height="16dp"
+                android:background="@color/cardItemGary"
+                android:layout_centerVertical="true"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_toLeftOf="@+id/et_min_value"
+                android:text="最大阈值"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_min_value"
+                android:background="@color/cardItemGary"
+                android:textSize="13sp"
+                android:height="16dp"
+                android:layout_alignParentRight="true"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:minWidth="80dp"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_error_value"
+                android:text="容错范围"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_error_value"
+                android:layout_toRightOf="@+id/tv_error_value"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textSize="13sp"
+                android:height="16dp"
+                android:background="@color/cardItemGary"
+                android:layout_width="wrap_content"
+                android:minWidth="70dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_toLeftOf="@+id/et_average_value"
+                android:text="阈值平均值"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_average_value"
+                android:background="@color/cardItemGary"
+                android:textSize="13sp"
+                android:height="16dp"
+                android:layout_alignParentRight="true"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:minWidth="80dp"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_time_value"
+                android:text="报警间隔"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_time_value"
+                android:layout_toRightOf="@+id/tv_time_value"
+                android:maxLines="1"
+                android:textSize="13sp"
+                android:height="16dp"
+                android:background="@color/cardItemGary"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:layout_height="20dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_note_value"
+                android:text="备注"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_note_value"
+                android:layout_toRightOf="@+id/tv_note_value"
+                android:minLines="1"
+                android:textSize="13sp"
+                android:height="16dp"
+                android:background="@color/cardItemGary"
+                android:layout_width="match_parent"
+                android:minHeight="20dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/bt_update_sensor"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/login_button_selector"
+        android:text="提交修改"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"/>
+
+</LinearLayout>

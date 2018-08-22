@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            style="@style/toolbar_title_style"
+            android:layout_centerInParent="true"
+            android:text="@string/login_tb_title"/>
+
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/login_logo_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"/>
+
+
+    <com.lznby.smartiot.view.MyEditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        app:edit_text_hint="@string/login_hint_username"
+        app:edit_text_input_type="false"
+        app:image_bg_src="@drawable/falseicon"
+        app:image_bg_visible="true"
+        app:title_text="@string/login_tv_username"/>
+
+
+    <com.lznby.smartiot.view.MyEditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:edit_text_hint="@string/login_hint_password"
+        app:edit_text_input_type="true"
+        app:image_bg_src="@drawable/pwd_visible"
+        app:image_bg_visible="true"
+        app:title_text="@string/login_tv_password"/>
+
+    <RadioGroup
+        android:id="@+id/rg_power"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:checkedButton="@id/rb_normal"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_rb_normal_user"/>
+
+        <RadioButton
+            android:id="@+id/rb_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_rb_Administrator"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/login_bt_login"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

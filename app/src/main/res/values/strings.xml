@@ -1,0 +1,36 @@
+<resources>
+    <!-- 应用名 -->
+    <string name="app_name">物联网信息采集系统</string>
+
+    <!-- 登录界面字符串 -->
+    <string name="login_tv_username">账号</string>
+    <string name="login_tv_password">密码</string>
+    <string name="login_hint_username">请输入账号</string>
+    <string name="login_hint_password">输入最少6为字符</string>
+    <string name="login_bt_login">登录</string>
+    <string name="login_tb_title">登录界面</string>
+    <string name="login_rb_normal_user">普通用户</string>
+    <string name="login_rb_Administrator">管理员</string>
+
+
+    <!-- 服务界面字符串 -->
+    <string name="title_activity_main">物联网服务中心</string>
+    <string name="nickname">张三</string>
+    <string name="company_name">浙江万里学院</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- setting -->
+    <string name="action_settings">添加子账号</string>
+
+    <!-- activity_main_drawer -->
+    <string name="account_management">账号管理</string>
+    <string name="bypass_account_management">子账号管理</string>
+    <string name="push_message">消息推送</string>
+    <string name="service_center">服务中心</string>
+    <string name="drawer_title">其他</string>
+    <string name="customer_service">联系客服</string>
+    <string name="account_logout">账号注销</string>
+
+</resources>

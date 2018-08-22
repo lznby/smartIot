@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyEditText">
+        <!-- 标题属性设置 -->
+        <attr name="title_text" format="string|integer"/>
+        <attr name="title_text_color" format="integer"/>
+
+        <!-- 输入属性设置 -->
+        <attr name="edit_text_hint" format="string|integer"/>
+        <attr name="edit_text_input_type" format="boolean"/>
+
+        <!-- 图标属性设置 -->
+        <attr name="image_bg_src" format="integer|reference"/>
+        <attr name="image_bg_visible" format="boolean"/>
+
+        <!-- View属性设置 -->
+        <attr name="view_bg_src" format="integer|reference"/>
+
+    </declare-styleable>
+</resources>

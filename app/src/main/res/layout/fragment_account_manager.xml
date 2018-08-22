@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.lznby.smartiot.view.MyEditText
+        android:id="@+id/mt_old_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:edit_text_hint="输入旧密码"
+        app:edit_text_input_type="true"
+        app:image_bg_src="@drawable/pwd_visible"
+        app:image_bg_visible="true"
+        app:title_text="旧密码"/>
+
+    <com.lznby.smartiot.view.MyEditText
+        android:id="@+id/mt_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:edit_text_hint="输入新密码"
+        app:edit_text_input_type="true"
+        app:image_bg_src="@drawable/pwd_visible"
+        app:image_bg_visible="true"
+        app:title_text="新密码"/>
+
+    <com.lznby.smartiot.view.MyEditText
+        android:id="@+id/mt_renew_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:edit_text_hint="重复输入新密码"
+        app:edit_text_input_type="true"
+        app:image_bg_src="@drawable/pwd_visible"
+        app:image_bg_visible="true"
+        app:title_text="新密码"/>
+
+    <Button
+        android:id="@+id/bt_change_password"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/login_button_selector"
+        android:text="确定修改"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"/>
+
+</LinearLayout>
